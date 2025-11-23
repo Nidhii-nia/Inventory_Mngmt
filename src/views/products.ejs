@@ -7,7 +7,7 @@
             <th scope="col">Description</th>
             <th scope="col">Price</th>
             <th scope="col">Image</th>
-            <th scope="col">Actions</th>
+            <th scope="col" colspan="2">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -25,6 +25,10 @@
             </td>
             <td>
               <a href="/update-product/<%=prod.id%>" class="btn btn-warning">Update</a>
+            </td>
+            <td>
+              <!--<a href="/delete-product/<%=prod.id%>" class="btn btn-danger">Delete</a>-->
+              <button class="btn btn-danger" onclick="deleteProduct('<%=prod.id%>')">Delete</button>
             </td>
           </tr>
         <%})%>

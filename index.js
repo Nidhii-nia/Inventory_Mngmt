@@ -21,6 +21,7 @@ server.get("/new", productController.getAddProduct);
 server.get("/update-product/:id", productController.getUpdateProductView);
 server.post("/", validateFormData, productController.postNewProduct);
 server.post('/update-product',productController.postUpdateProduct);
+server.post('/delete-product/:id',productController.postDeleteProduct);
 
 server.listen(3400);
 console.log("Server is listening on port 3400");

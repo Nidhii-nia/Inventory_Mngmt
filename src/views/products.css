@@ -8,3 +8,9 @@ img{
     width:150px;
     height: 200px;
 }
+
+table thead{
+    text-align: center;
+}
+
+
