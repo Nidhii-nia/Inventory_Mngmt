@@ -28,13 +28,13 @@ static update(productObj) {
 }
 
 
-  static addBook(book) {
+  static addBook(name,description,price,imageUrl) {
     const newProduct = {
       id: products.length + 1,
-      title: book.name,
-      description: book.description,
-      price: parseFloat(book.price),
-      image: book.imageUrl,
+      title: name,
+      description: description,
+      price: parseFloat(price),
+      image: imageUrl,
       category: "books"
     };
 
